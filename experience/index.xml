@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Experiencia on Bruno Garcia</title>
-    <link>http://localhost:1313/experience/</link>
+    <link>https://ihackurass.github.io/experience/</link>
     <description>Recent content in Experiencia on Bruno Garcia</description>
     <generator>Hugo</generator>
     <language>es-PE</language>
-    <atom:link href="http://localhost:1313/experience/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ihackurass.github.io/experience/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

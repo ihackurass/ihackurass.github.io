@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sobre Mi - Bruno Garcia</title>
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/svg+xml" sizes="32x32" href="http://localhost:1313/images/icon.svg">
+        <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/images/icon.svg">
+        <link rel="manifest" href="http://localhost:1313/favicon_io/site.webmanifest">        
+        <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" as="style">
+        
+        
+        <style>
+            html, body {
+                background-color: #121212;
+                color: #f3f4f6;
+            }            
+            .border {
+                border-color: #374151;
+            }            
+            .carousel-item {
+                display: inline-block;
+                margin: 0 1rem;
+            }            
+            .flex {
+                display: flex;
+            }
+            .flex-col {
+                flex-direction: column;
+            }
+            
+            @media (min-width: 768px) {
+                .md\:flex-row {
+                    flex-direction: row;
+                }
+            }
+            
+            .tech-carousel {
+                overflow: hidden;
+                width: 100%;
+                padding: 1rem 0;
+            }
+            
+            .carousel-track {
+                white-space: nowrap;
+            }
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(10px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            
+            .animate-fadeIn {
+                animation: fadeIn 0.6s ease-out;
+            }
+        </style>
+        
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+        <script>
+            
+            if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        </script>
+        <style>
+            :root {
+                color-scheme: dark;
+            }
+            
+            body {
+                @apply bg-[#121212] text-gray-100;
+            }
+
+            .tech-icon {
+                filter: grayscale(100%) brightness(200%);
+                transition: all 0.3s ease;
+            }
+            .tech-icon:hover {
+                filter: none;
+            }
+            
+            @keyframes scroll {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+            
+            .tech-carousel {
+                width: 100%;
+                padding: 1rem 0;
+            }
+            
+            .tech-track {
+                width: fit-content;
+                animation: scroll 20s linear infinite;
+            }
+            
+            .tech-track:hover {
+                animation-play-state: paused;
+            }
+            
+            .tech-slide {
+                float: left;
+            }
+        </style>
+    </head>
+    <body class="min-h-screen bg-[#121212] text-gray-100">
+        
+<head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C0RTF18BT4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-C0RTF18BT4');
+    </script>
+    
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+    </style>
+</head>
+<header class="py-6 relative">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div class="flex justify-between items-center">
+                <svg width="40px" height="40px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-2">
+                    <path d="M7 0V1.60002C7.32311 1.53443 7.65753 1.5 8 1.5C8.34247 1.5 8.67689 1.53443 9 1.60002V0H11V2.49963C11.8265 3.12041 12.4543 3.99134 12.7711 5H3.2289C3.5457 3.99134 4.17354 3.12041 5 2.49963V0H7Z" fill="#bfbfbf"/>
+                    <path d="M0 7V9H3V10.4957L0.225279 11.2885L0.774721 13.2115L3.23189 12.5095C3.87194 14.5331 5.76467 16 8 16C10.2353 16 12.1281 14.5331 12.7681 12.5095L15.2253 13.2115L15.7747 11.2885L13 10.4957V9H16V7H9V12H7V7H0Z" fill="#bfbfbf"/>
+                </svg>
+                <a href="http://localhost:1313/" class="text-xl font-bold text-white hover:text-gray-300 transition-colors duration-300">
+                    Bruno Garcia
+                </a>
+                
+                <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>            
+            
+            <nav class="hidden md:flex flex-wrap justify-center items-center gap-4 md:gap-6">
+                
+                
+                <a href="http://localhost:1313/about/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 text-white font-semibold">About</a>
+                
+                <a href="http://localhost:1313/experience/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">Experience</a>
+                
+                <a href="http://localhost:1313/projects/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">Projects</a>
+                
+                <a href="http://localhost:1313/contact/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">Contact Me</a>
+                
+            </nav>
+            <div class="hidden md:flex justify-end">
+                <div class="flex items-center">
+                    <span class="text-lg text-gray-300 mr-2">Local Time:</span>
+                    <div id="local-time" class="text-lg text-gray-300"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="mobile-menu" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden transition-all duration-300">
+        <div class="flex flex-col h-full">
+            <div class="flex justify-between items-center p-6 border-b border-gray-800">
+                <span class="text-xl font-bold text-white">Menu</span>
+                <button id="mobile-menu-close" class="text-gray-300 hover:text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav class="flex flex-col p-6 space-y-4">
+                
+                <a href="http://localhost:1313/about/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 text-white font-semibold">About</a>
+                
+                <a href="http://localhost:1313/experience/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">Experience</a>
+                
+                <a href="http://localhost:1313/projects/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">Projects</a>
+                
+                <a href="http://localhost:1313/contact/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">Contact Me</a>
+                
+            </nav>
+            <div class="mt-auto p-6 border-t border-gray-800">
+                <div class="flex items-center justify-center">
+                    <span class="text-lg text-gray-300 mr-2">Local Time:</span>
+                    <div id="mobile-local-time" class="text-lg text-gray-300"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script>
+    
+    function updateLocalTime() {
+        const timeElements = document.querySelectorAll('#local-time, #mobile-local-time');
+        timeElements.forEach(element => {
+            if (element) {
+                const now = new Date();
+                const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                element.textContent = timeString;
+            }
+        });
+    }
+    updateLocalTime();
+    setInterval(updateLocalTime, 1000);
+
+    
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenuClose = document.getElementById('mobile-menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    function toggleMobileMenu() {
+        const isHidden = mobileMenu.classList.contains('hidden');
+        if (isHidden) {
+            mobileMenu.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; 
+        } else {
+            mobileMenu.classList.add('hidden');
+            document.body.style.overflow = ''; 
+        }
+    }
+
+    mobileMenuButton.addEventListener('click', toggleMobileMenu);
+    mobileMenuClose.addEventListener('click', toggleMobileMenu);
+
+    
+    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            toggleMobileMenu();
+        });
+    });
+
+    
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    if (themeToggleBtn) {
+        const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+        const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            themeToggleLightIcon.classList.remove('hidden');
+            themeToggleDarkIcon.classList.add('hidden');
+        } else {
+            themeToggleLightIcon.classList.add('hidden');
+            themeToggleDarkIcon.classList.remove('hidden');
+        }
+
+        themeToggleBtn.addEventListener('click', function() {
+            themeToggleDarkIcon.classList.toggle('hidden');
+            themeToggleLightIcon.classList.toggle('hidden');
+
+            if (localStorage.getItem('color-theme')) {
+                if (localStorage.getItem('color-theme') === 'light') {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                }
+            } else {
+                if (document.documentElement.classList.contains('dark')) {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                } else {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                }
+            }
+        });
+    }
+</script> 
+        <main>
+            
+<div class="max-w-4xl mx-auto px-4 py-12">
+    <h1 class="text-5xl font-bold mb-6 text-gray-100">Sobre Mi</h1>
+
+    <div class="flex flex-col gap-8">
+        <div class="flex-grow">
+            <div class="bg-[#121212] p-8 rounded-lg mb-8">
+                <div class="prose prose-invert prose-lg max-w-none">
+                    <div class="text-lg">
+                        Apasionado por el desarrollo backend  y autodidacta con un enfoque meticuloso en la creación de soluciones tecnológicas eficientes. Mi fascinación por la programación me ha llevado a aprender diversos lenguajes y algunos frameworks a lo largo de 6 años de constante aprendizaje. Me caracterizo por mi capacidad para enfrentar desafíos complejos con creatividad y perseverancia, siempre buscando la mejor arquitectura posible. cada proyecto que me propongo refleja mi dedicación a la excelencia técnica y mi pasión por crear tecnología que realmente resuelva problemas.
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="bg-[#121212] p-8 rounded-lg mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 text-gray-100">Perfil Desarrollador</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+                    <a href="https://github.com/ihackurass" target="_blank" class="contact-link flex items-center gap-4 p-4 rounded-lg bg-[#121212] border border-gray-800 transition-all duration-300 group">
+                        <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentcolor" style="--darkreader-inline-fill: currentcolor;" data-darkreader-inline-fill=""><path d="M12 0C5.374.0.0 5.373.0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931.0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176.0.0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221.0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path></svg>
+
+                        <div class="min-w-0">
+                            <div class="text-gray-400 group-hover:text-gray-200 transition-colors duration-300 truncate">GitHub</div>
+                            <div class="text-sm text-gray-500 group-hover:text-gray-400 transition-colors duration-300 truncate">ihackurass</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            
+
+            <div class="bg-[#121212] p-6 md:p-8 rounded-lg mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-gray-100">Certificados</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    
+                    <a href="https://www.credly.com/badges/07690d6f-a935-4ba7-98c6-5c88410a1cf3/public_url" 
+                       target="_blank"
+                       class="certification-link flex flex-col h-full p-4 md:p-6 rounded-lg bg-[#121212] border border-gray-800 hover:shadow-md transition-all duration-300">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg md:text-xl font-semibold text-gray-100">
+                                <span class="animated-link text-gray-100 hover:text-gray-200 transition-colors duration-300">Junior Cybersecurity Analyst Career Path</span>
+                            </h3>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-1">Issued: Jun 2024</p>
+                    </a>
+                    
+                    <a href="https://www.scrumstudy.com/certification/verify?type=SFC&amp;number=1053479" 
+                       target="_blank"
+                       class="certification-link flex flex-col h-full p-4 md:p-6 rounded-lg bg-[#121212] border border-gray-800 hover:shadow-md transition-all duration-300">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg md:text-xl font-semibold text-gray-100">
+                                <span class="animated-link text-gray-100 hover:text-gray-200 transition-colors duration-300">Scrum Fundamentals Certified (SFC™)</span>
+                            </h3>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-1">Issued: Oct 2024</p>
+                    </a>
+                    
+                    <a href="https://www.credly.com/badges/f0957f08-c94b-449c-a6f9-738c8a9dfb08/public_url" 
+                       target="_blank"
+                       class="certification-link flex flex-col h-full p-4 md:p-6 rounded-lg bg-[#121212] border border-gray-800 hover:shadow-md transition-all duration-300">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg md:text-xl font-semibold text-gray-100">
+                                <span class="animated-link text-gray-100 hover:text-gray-200 transition-colors duration-300">Python Essentials 1</span>
+                            </h3>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-1">Issued: Oct 2024</p>
+                    </a>
+                    
+                    <a href="https://www.credly.com/badges/5f2172e8-e4c6-40c7-b3f1-38397cc4f7bb/public_url" 
+                       target="_blank"
+                       class="certification-link flex flex-col h-full p-4 md:p-6 rounded-lg bg-[#121212] border border-gray-800 hover:shadow-md transition-all duration-300">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg md:text-xl font-semibold text-gray-100">
+                                <span class="animated-link text-gray-100 hover:text-gray-200 transition-colors duration-300">Python Essentials 2</span>
+                            </h3>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-1">Issued: Oct 2024</p>
+                    </a>
+                    
+                    <a href="https://certificados.uni.edu.pe/verificador/search.php?cert_id=cert_eecc961e1fad9ea2d179a32460354249" 
+                       target="_blank"
+                       class="certification-link flex flex-col h-full p-4 md:p-6 rounded-lg bg-[#121212] border border-gray-800 hover:shadow-md transition-all duration-300">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg md:text-xl font-semibold text-gray-100">
+                                <span class="animated-link text-gray-100 hover:text-gray-200 transition-colors duration-300">Ciberseguridad: Pentesting contra aplicaciones Web (C|PW)</span>
+                            </h3>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-1">Issued: Feb 2025</p>
+                    </a>
+                    
+                    <a href="https://certificados.uni.edu.pe/verificador/search.php?cert_id=cert_0d676edc2f192f0d25751dafb2f1c112" 
+                       target="_blank"
+                       class="certification-link flex flex-col h-full p-4 md:p-6 rounded-lg bg-[#121212] border border-gray-800 hover:shadow-md transition-all duration-300">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg md:text-xl font-semibold text-gray-100">
+                                <span class="animated-link text-gray-100 hover:text-gray-200 transition-colors duration-300">Power BI - Intermedio</span>
+                            </h3>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-1">Issued: Mar 2025</p>
+                    </a>
+                    
+                    <a href="https://www.credly.com/badges/ccd210cd-aadc-4c66-9afb-ba0a709d8f62/public_url" 
+                       target="_blank"
+                       class="certification-link flex flex-col h-full p-4 md:p-6 rounded-lg bg-[#121212] border border-gray-800 hover:shadow-md transition-all duration-300">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg md:text-xl font-semibold text-gray-100">
+                                <span class="animated-link text-gray-100 hover:text-gray-200 transition-colors duration-300">Linux Essentials</span>
+                            </h3>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-1">Issued: Jun 2025</p>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <div class="bg-[#121212] p-6 md:p-8 rounded-lg mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-gray-100">Work</h2>
+                <div class="space-y-6">
+                    
+                    <div class="flex flex-col gap-2 p-4 rounded-lg bg-[#121212] border border-gray-800 transition-all duration-300">
+                        <div class="text-gray-400 hover:text-gray-200 text-base">
+                            <a href="https://www.buntssanghamumbai.com/" target="_blank" class="animated-link flex items-center gap-2">
+                                Freelance Work
+                            </a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <h3 class="text-xl md:text-2xl font-semibold text-gray-100">Freelancer</h3>
+                        </div>
+                        <div class="text-gray-400 flex items-center gap-2 text-base">
+                            <span>2021 - Present</span>
+                        </div>
+                        <p class="text-gray-300 text-base">Programador independiente desarrollando aplicaciones a medida del cliente. </p>
+                    </div>
+                    
+                    <div class="flex flex-col gap-2 p-4 rounded-lg bg-[#121212] border border-gray-800 transition-all duration-300">
+                        <div class="text-gray-400 hover:text-gray-200 text-base">
+                            <a href="https://www.buntssanghamumbai.com/" target="_blank" class="animated-link flex items-center gap-2">
+                                Fondo De Empleados Del Banco De La Nacion
+                            </a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <h3 class="text-xl md:text-2xl font-semibold text-gray-100">Asistente TI</h3>
+                        </div>
+                        <div class="text-gray-400 flex items-center gap-2 text-base">
+                            <span>2025 - Present</span>
+                        </div>
+                        <p class="text-gray-300 text-base">Desarrollador Full Stack encargado de convertir las aplicaciones de escritorio antiguas a soluciones web aplicando los conocimientos adquiridos para hacer las pruebas correspondientes antes de desplegar</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .prose {
+        @apply text-gray-300;
+        font-size: 1.125rem;
+    }
+    .prose p {
+        @apply text-gray-300 mb-6;
+        line-height: 1.9;
+        font-size: 1.00rem;
+    }
+    .prose p + p {
+        margin-top: 2rem;
+    }
+
+    .animated-link {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+    }
+    
+    .animated-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 1px;
+        bottom: -1px;
+        left: 0;
+        background-color: #ffffff;
+        transition: width 0.3s ease-in-out;
+    }
+    
+    .animated-link:hover::after {
+        width: 100%;
+    }
+    
+    .certification-link {
+        transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.3s ease;
+    }
+    
+    
+    .certification-link .animated-link::after {
+        height: 1.5px;
+        background-color: rgb(255, 255, 255);
+        bottom: -3px;
+    }
+</style>
+
+        </main>
+        
+<footer class="mt-32 text-center">
+    <div class="max-w-3xl mx-auto">
+        <div class="border-t border-gray-800 pt-5">
+            <div class="flex flex-col items-center justify-center gap-2">                
+                <p class="text-gray-500 text-xm ">© 2025 Bruno Garcia</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .animated-link {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+    }
+    
+    .animated-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 1px;
+        bottom: -1px;
+        left: 0;
+        background-color: #ffffff;
+        transition: width 0.3s ease-in-out;
+    }
+    
+    .animated-link:hover::after {
+        width: 100%;
+    }
+</style> 
+    </body>
+</html> 

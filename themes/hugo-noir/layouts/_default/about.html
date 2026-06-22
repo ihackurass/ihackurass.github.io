@@ -1,0 +1,141 @@
+{{ define "main" }}
+<div class="max-w-4xl mx-auto px-4 py-12">
+    <h1 class="text-5xl font-bold mb-6 text-gray-100">{{ .Title }}</h1>
+
+    <div class="flex flex-col gap-8">
+        <div class="flex-grow">
+            <div class="bg-[#121212] p-8 rounded-lg mb-8">
+                <div class="prose prose-invert prose-lg max-w-none">
+                    <div class="text-lg">
+                        {{ .Description }}
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Coding Profiles Section -->
+            <div class="bg-[#121212] p-8 rounded-lg mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 text-gray-100">Perfil Desarrollador</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+                    <a href="{{ .Site.Params.github }}" target="_blank" class="contact-link flex items-center gap-4 p-4 rounded-lg bg-[#121212] border border-gray-800 transition-all duration-300 group">
+                        <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentcolor" style="--darkreader-inline-fill: currentcolor;" data-darkreader-inline-fill=""><path d="M12 0C5.374.0.0 5.373.0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931.0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176.0.0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221.0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path></svg>
+
+                        <div class="min-w-0">
+                            <div class="text-gray-400 group-hover:text-gray-200 transition-colors duration-300 truncate">GitHub</div>
+                            <div class="text-sm text-gray-500 group-hover:text-gray-400 transition-colors duration-300 truncate">{{ .Site.Params.github_username }}</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            {{ with .Site.Params.honors }}
+            <div class="bg-[#121212] p-6 md:p-8 rounded-lg mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-gray-100">Educación</h2>
+                <div class="space-y-6">
+                    {{ range . }}
+                    <div class="flex flex-col gap-2 p-4 rounded-lg bg-[#121212] border border-gray-800 transition-all duration-300">
+                        <div class="text-gray-400 text-sm">{{ .institution }}</div>
+                        <div class="flex items-center gap-2">
+                            <h3 class="text-xl md:text-2xl font-semibold text-gray-100">{{ .title }}</h3>
+                        </div>
+                        <div class="text-gray-400 flex items-center gap-2 text-sm">
+                            <span>{{ .date }}</span>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+
+            <div class="bg-[#121212] p-6 md:p-8 rounded-lg mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-gray-100">Certificados</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {{ range .Site.Params.certifications }}
+                    <a href="{{ .url }}" 
+                       target="_blank"
+                       class="certification-link flex flex-col h-full p-4 md:p-6 rounded-lg bg-[#121212] border border-gray-800 hover:shadow-md transition-all duration-300">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg md:text-xl font-semibold text-gray-100">
+                                <span class="animated-link text-gray-100 hover:text-gray-200 transition-colors duration-300">{{ .title }}</span>
+                            </h3>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-1">Issued: {{ .date }}</p>
+                    </a>
+                    {{ end }}
+                </div>
+            </div>
+
+            {{ with .Site.Params.voluntary }}
+            <div class="bg-[#121212] p-6 md:p-8 rounded-lg mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-gray-100">Freelance</h2>
+                <div class="space-y-6">
+                    {{ range . }}
+                    <div class="flex flex-col gap-2 p-4 rounded-lg bg-[#121212] border border-gray-800 transition-all duration-300">
+                        <div class="text-gray-400 hover:text-gray-200 text-base">
+                            <a href="https://www.buntssanghamumbai.com/" target="_blank" class="animated-link flex items-center gap-2">
+                                {{ .organization }}
+                            </a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <h3 class="text-xl md:text-2xl font-semibold text-gray-100">{{ .role }}</h3>
+                        </div>
+                        <div class="text-gray-400 flex items-center gap-2 text-base">
+                            <span>{{ .period }}</span>
+                        </div>
+                        <p class="text-gray-300 text-base">{{ .description }}</p>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+
+<style>
+    .prose {
+        @apply text-gray-300;
+        font-size: 1.125rem;
+    }
+    .prose p {
+        @apply text-gray-300 mb-6;
+        line-height: 1.9;
+        font-size: 1.00rem;
+    }
+    .prose p + p {
+        margin-top: 2rem;
+    }
+
+    .animated-link {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+    }
+    
+    .animated-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 1px;
+        bottom: -1px;
+        left: 0;
+        background-color: #ffffff;
+        transition: width 0.3s ease-in-out;
+    }
+    
+    .animated-link:hover::after {
+        width: 100%;
+    }
+    
+    .certification-link {
+        transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.3s ease;
+    }
+    
+    
+    .certification-link .animated-link::after {
+        height: 1.5px;
+        background-color: rgb(255, 255, 255);
+        bottom: -3px;
+    }
+</style>
+{{ end }} 

@@ -1,0 +1,4 @@
+---
+title: "Experiencia"
+description : "Durante mis 6 años como un apasionado a la programacion y enfocandome en el desarrollo backend, he concebido y ejecutado múltiples proyectos completos que han fortalecido mi experiencia técnica. He diseñado e implementado aplicaciones web y móviles desde su conceptualización hasta su despliegue, gestionando todos los aspectos del ciclo de desarrollo. Mi experiencia incluye la implementación de APIs RESTful, desarrollo de interfaces de usuario dinámicas y optimización de bases de datos para alto rendimiento. He liderado iniciativas independientes que han requerido dedicacion, permitiéndome desarrollar un conjunto de habilidades versátil y adaptable a diversos entornos tecnológicos."
+---

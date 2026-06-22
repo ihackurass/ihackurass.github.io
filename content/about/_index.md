@@ -1,0 +1,4 @@
+---
+title: "Sobre Mi"
+description : "Apasionado por el desarrollo backend  y autodidacta con un enfoque meticuloso en la creación de soluciones tecnológicas eficientes. Mi fascinación por la programación me ha llevado a aprender diversos lenguajes y algunos frameworks a lo largo de 6 años de constante aprendizaje. Me caracterizo por mi capacidad para enfrentar desafíos complejos con creatividad y perseverancia, siempre buscando la mejor arquitectura posible. cada proyecto que me propongo refleja mi dedicación a la excelencia técnica y mi pasión por crear tecnología que realmente resuelva problemas."
+---

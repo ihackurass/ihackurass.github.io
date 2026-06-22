@@ -1,0 +1,384 @@
+baseURL = "https://ihackurass.github.io/"
+languageCode = 'es-PE'
+title = 'Bruno Garcia'
+theme = 'hugo-noir'
+
+# URL handling
+relativeURLs = false
+canonifyURLs = false
+
+# Taxonomy configuration
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[params]
+name = "Bruno Garcia"
+location = "Lima, PERU"
+description = "Enfocado En El Desarrollo Web y Apasionado por la Ingenieria Inversa." 
+profile_image = "/images/perfil.jpeg"
+resume_pdf = "/files/resume.pdf"
+iconSVG = 'images/icon.svg'
+discord = "ihackurass"
+github = "https://github.com/ihackurass"
+github_username = "ihackurass"
+email = "bruno.lopez292929@gmail.com"
+twitter = "https://www.twitter.com/ihackurass"
+twitter_username = "ihackurass"
+medium = "https://www.medium.com/@ihackurass"
+linkedin = "https://www.linkedin.com/in/brunojesgarlop"
+linkedin_username = "brunojesgarlop"
+instagram = "https://instagram.com/ihackurass"
+leetcode = "https://leetcode.com/ihackurass"
+leetcode_username = "ihackurass"
+monkeytype = "https://monkeytype.com/profile/ihackurassw"
+monkeytype_username = "ihackurass"
+kaggle = "https://www.kaggle.com/ihackurass"
+kaggle_username = "ihackurass"
+
+[[params.honors]]
+institution = "Universidad Privada del Norte"
+title = "Tercio Superior"
+date = "2022 - 2026"
+
+[[params.honors]]
+institution = "Asociación Cultural Peruano Británica (Británico)"
+title = "Estudios de Inglés"
+date = "Jun 2025 - Dec 2026"
+
+[[params.certifications]]
+title = "TypeScript desde cero"
+date = "Feb 2026"
+url = "https://www.udemy.com/certificate/UC-d01c00e6-b351-42b4-aa37-5a30ab9dc9ca/"
+
+[[params.certifications]]
+title = "Domina Python"
+date = "Jan 2026"
+url = "https://www.linkedin.com/learning/certificates/3110c368d475095525d3b6e476ce321f3e38a8165641f809aca399c43ffff9d6"
+
+[[params.certifications]]
+title = "Python avanzado 2"
+date = "Jan 2026"
+url = "https://www.linkedin.com/learning/certificates/85e9a9b8b511e66564e81118c3483e93bb681ff3f757d5d269d308a3df2f69ec"
+
+[[params.certifications]]
+title = "Python avanzado"
+date = "Jan 2026"
+url = "https://www.linkedin.com/learning/certificates/81a2301b81d20aad13d63f933b29eec6dc9a9c295f520803f3ad5979079d5cb7"
+
+[[params.certifications]]
+title = "Desafío de programación: Python"
+date = "Dec 2025"
+url = "https://www.linkedin.com/learning/certificates/660c1086433e7a4a5c664231527c6a6ec2029cd383cae5db7cecde34e5f283bc"
+
+[[params.certifications]]
+title = "Linux Essentials"
+date = "Jul 2025"
+url = "https://www.credly.com/badges/ccd210cd-aadc-4c66-9afb-ba0a709d8f62/linked_in_profile"
+
+[[params.certifications]]
+title = "Power BI - Intermedio"
+date = "Mar 2025"
+url = "https://certificados.uni.edu.pe/verificador/search.php?cert_id=cert_0d676edc2f192f0d25751dafb2f1c112"
+
+[[params.certifications]]
+title = "Ciberseguridad: Pentesting contra aplicaciones Web (C|PW)"
+date = "Feb 2025"
+url = "https://certificados.uni.edu.pe/verificador/search.php?cert_id=cert_eecc961e1fad9ea2d179a32460354249"
+
+[[params.certifications]]
+title = "Python Essentials 2"
+date = "Nov 2024"
+url = "https://www.credly.com/badges/5f2172e8-e4c6-40c7-b3f1-38397cc4f7bb/linked_in_profile"
+
+[[params.certifications]]
+title = "Scrum Fundamentals Certified (SFC™)"
+date = "Oct 2024"
+url = "https://www.scrumstudy.com/certification/verify?type=SFC&number=1053479"
+
+[[params.certifications]]
+title = "Junior Cybersecurity Analyst Career Path"
+date = "Jun 2024"
+url = "https://www.credly.com/badges/07690d6f-a935-4ba7-98c6-5c88410a1cf3/linked_in_profile"
+
+
+#[[params.certifications]]
+#title = "Google Cloud ML Professional"
+#date = "March 2024" 
+#url = "https://example.com/cert-gcp"
+
+#[[params.experience]]
+#company = "Lorem Technologies"
+#role = "AI Research Engineer"
+#period = "Jan 2023 - Dec 2023"
+#logo = "/images/company/lorem.png"
+#description = "Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore."
+#responsibilities = [
+#    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+#    "Ut enim ad minim veniam, quis nostrud exercitation",
+#    "Duis aute irure dolor in reprehenderit in voluptate",
+#    "Excepteur sint occaecat cupidatat non proident"
+#]
+
+#[[params.experience]]
+#company = "Ipsum Solutions"
+#role = "Machine Learning Engineer"
+#period = "Jun 2022 - Dec 2022"
+#logo = "/images/company/ipsum.png"
+#description = "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+#responsibilities = [
+#    "Sed ut perspiciatis unde omnis iste natus error",
+#    "Nemo enim ipsam voluptatem quia voluptas sit",
+#    "At vero eos et accusamus et iusto odio dignissimos",
+#    "Et harum quidem rerum facilis est et expedita"
+#]
+
+#[[params.experience]]
+#company = "Dolor Analytics"
+#role = "Data Scientist"
+#period = "Jan 2022 - May 2022"
+#logo = "/images/company/dolor.png"
+#description = "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit."
+#responsibilities = [
+#    "Nam libero tempore, cum soluta nobis est eligendi",
+#    "Temporibus autem quibusdam et aut officiis debitis",
+#    "Itaque earum rerum hic tenetur a sapiente delectus"
+#]
+
+[[params.experience]]
+company = "Bancom Perú"
+role = "Practicante Pre Profesional - Desarrollo TI"
+period = "Jun 2026 - Actualidad"
+responsibilities = [
+    "Versionamiento de código del core bancario FitBank y SIAF (AS400).",
+    "Revisión de incidencias."
+]
+
+[[params.experience]]
+company = "Fondo de Empleados del Banco de la Nación"
+role = "Practicante Pre Profesional - Desarrollador Full Stack"
+period = "Jun 2025 - May 2026"
+responsibilities = [
+    "Transformación de aplicaciones de escritorio en soluciones web utilizando Angular en el frontend y Python, C# o Java en el backend con sus APIs correspondientes.",
+    "Pruebas de aplicaciones mediante pentesting e ingeniería inversa para identificar vulnerabilidades y validar funcionalidad antes del despliegue.",
+    "Despliegue de soluciones en servidores cloud y capacitación de usuarios para nuevas interfaces web."
+]
+technologies = ["PHP", "C#", "Angular", "Python", "Java"]
+
+[[params.experience]]
+company = "Profesional Independiente"
+role = "Desarrollador Freelance"
+period = "Sept 2021 - May 2025"
+responsibilities = [
+    "Desarrollo de herramientas de automatización para extracción de datos web (web scraping).",
+    "Pruebas de penetración y desarrollo de scripts ofensivos con Python."
+]
+technologies = ["Python", "Web Scraping", "Pentesting"]
+
+[[params.projects]]
+title = "AquaTrack"
+description = "Aplicación Java de código abierto para la visualización geoespacial de puntos de abastecimiento de agua en el Peru."
+tech = "Java, MySQL, PHP, Server-Side"
+image = "/images/projects/aqua.jpg"
+link = "https://github.com/ihackurass/AquaTrack-Peru"
+
+[[params.projects]]
+title = "AquaSocial"
+description = "Plataforma Red social dedicada a los puntos de abastecimiento de agua en Perú"
+tech = "HTML, JavaScript, Bootstrap, Front-End"
+image = "/images/projects/aquaSocial.jpg"
+link = "https://github.com/ihackurass/AquaSocial"
+
+[[params.projects]]
+title = "QoriPunku"
+description = "Sistema de control de acceso que combina RFID con verificación fotográfica remota vía WhatsApp."
+tech = "Arduino, ESP32-CAM, PHP, Server-Side, HTML, JavaScript"
+image = "/images/projects/QoriPunku.jpg"
+link = "https://github.com/ihackurass/QoriPunku"
+
+[[params.projects]]
+title = "QoriPunku-Admin"
+description = "Aplicación para la gestión remota del sistema de control de acceso QoriPunku."
+tech = "Flutter, Dart, PHP, MySQL"
+image = "/images/projects/QoriPunku-Admin.png"
+link = "https://github.com/ihackurass/QoriPunku-Admin"
+
+[[params.projects]]
+title = "iHackUrAss CaptchaSolver"
+description = "API REST gratuita para resolver CAPTCHAs de forma automatizada."
+tech = "REST API, Python, Backend"
+image = "/images/projects/CaptchaSolver.jpg"
+link = "https://github.com/ihackurass/iHackUrAss_CaptchaSolver"
+
+[[params.projects]]
+title = "Google Messages SMS API"
+description = "API REST en C# que conecta con Google Messages para enviar y recibir SMS de forma programática desde el escritorio."
+tech = "C#, .NET, REST API"
+image = "/images/projects/GoogleMessagesSMS.jpg"
+link = "https://github.com/ihackurass/Google-Messages-SMS-API"
+
+
+#[[params.projects]]
+#title = "Adipiscing Platform"
+#description = "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur."
+#tech = "React, Node.js, MongoDB, AWS"
+#image = "/images/project.png"
+#link = "https://github.com/loremipsum/adipiscing"
+#
+#[[params.projects]]
+#title = "Tempor Analytics"
+#description = "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium."
+#tech = "Python, FastAPI, PostgreSQL, Docker"
+#image = "/images/projects/tempor.png"
+#link = "https://github.com/loremipsum/tempor"
+#
+#[[params.projects]]
+#title = "Eiusmod Framework"
+#description = "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam."
+#tech = "Python, PyTorch, MLflow, Kubernetes"
+#image = "/images/projects/eiusmod.png"
+#link = "https://github.com/loremipsum/eiusmod"
+#
+#[[params.projects]]
+#title = "Incididunt Engine"
+#description = "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus."
+#tech = "Python, Scikit-learn, Flask, Redis"
+#image = "/images/projects/incididunt.png"
+#link = "https://github.com/loremipsum/incididunt"
+#
+#[[params.projects]]
+#title = "Labore System"
+#description = "Et harum quidem rerum facilis est et expedita distinctio nam libero tempore."
+#tech = "JavaScript, Express, MongoDB, Docker"
+#image = "/images/projects/labore.jpg"
+#link = "https://github.com/loremipsum/labore"
+#
+#[[params.projects]]
+#title = "Dolore Platform"
+#description = "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe."
+#tech = "Python, Django, PostgreSQL, Celery"
+#image = "/images/projects/dolore.png"
+#link = "https://github.com/loremipsum/dolore"
+#
+#[[params.projects]]
+#title = "Magna Analytics"
+#description = "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus."
+#tech = "Python, Pandas, Streamlit, AWS"
+#image = "/images/projects/magna.png"
+#link = "https://github.com/loremipsum/magna"
+#
+#[[params.projects]]
+#title = "Aliqua Framework"
+#description = "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae."
+#tech = "TypeScript, React, GraphQL, Docker"
+#image = "/images/projects/aliqua.jpg"
+#link = "https://github.com/loremipsum/aliqua"
+#
+#[[params.projects]]
+#title = "Excepteur System"
+#description = "Nisi ut aliquid ex ea commodi consequatur quis autem vel eum iure reprehenderit."
+#tech = "Python, FastAPI, Redis, Kubernetes"
+#image = "/images/projects/excepteur.jpg"
+#link = "https://github.com/loremipsum/excepteur"
+
+[[params.blogs]]
+title = "Lorem Ipsum Systems"
+date = "2025-03-15"
+summary = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem."
+tags = ["Lorem", "Ipsum", "Dolor"]
+content = """
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit...
+"""
+link = "https://medium.com/@loremipsum/lorem-systems"
+
+[[params.blogs]]
+title = "The Future of Dolor"
+date = "2025-02-28"
+summary = "At vero eos et accusamus et iusto odio dignissimos ducimus."
+tags = ["Sit", "Amet", "Consectetur"]
+content = """
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis...
+"""
+link = "https://medium.com/@loremipsum/future-dolor"
+
+[[params.blogs]]
+title = "Adipiscing: A Practical Guide"
+date = "2025-02-10"
+summary = "Nam libero tempore, cum soluta nobis est eligendi optio."
+tags = ["Elit", "Tempor", "Guide"]
+content = """
+Et harum quidem rerum facilis est et expedita distinctio...
+"""
+link = "https://medium.com/@loremipsum/adipiscing-guide"
+
+[[params.blogs]]
+title = "Optimizing Incididunt"
+date = "2025-01-20"
+summary = "Temporibus autem quibusdam et aut officiis debitis."
+tags = ["Labore", "Dolore", "Magna"]
+content = """
+Itaque earum rerum hic tenetur a sapiente delectus...
+"""
+link = "https://medium.com/@loremipsum/optimizing-incididunt"
+
+[[params.blogs]]
+title = "Aliqua: A Comprehensive Guide"
+date = "2024-12-15"
+summary = "Quis autem vel eum iure reprehenderit qui in ea voluptate."
+tags = ["Ut", "Enim", "Minim"]
+content = """
+Nisi ut aliquid ex ea commodi consequatur quis autem...
+"""
+link = "https://medium.com/@loremipsum/aliqua-guide"
+
+[[params.blogs]]
+title = "Veniam in Practice"
+date = "2024-11-20"
+summary = "Duis aute irure dolor in reprehenderit in voluptate velit."
+tags = ["Esse", "Cillum", "Dolore"]
+content = """
+Excepteur sint occaecat cupidatat non proident...
+"""
+link = "https://medium.com/@loremipsum/veniam-practice"
+
+[[params.blogs]]
+title = "Fugiat for Systems"
+date = "2024-10-25"
+summary = "Sunt in culpa qui officia deserunt mollit anim id est laborum."
+tags = ["Nulla", "Pariatur", "Systems"]
+content = """
+Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+"""
+link = "https://medium.com/@loremipsum/fugiat-systems"
+
+[[params.blogs]]
+title = "Best Practices in Consectetur"
+date = "2024-09-30"
+summary = "Sed do eiusmod tempor incididunt ut labore et dolore magna."
+tags = ["Best", "Practices", "Guide"]
+content = """
+Ut enim ad minim veniam, quis nostrud exercitation...
+"""
+link = "https://medium.com/@loremipsum/consectetur-practices"
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 1
+  [[menu.main]]
+    name = "Experience"
+    url = "/experience/"
+    weight = 2
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 3
+  #[[menu.main]]
+  #  name = "Blogs"
+  #  url = "/blogs/"
+  #  weight = 4
+  [[menu.main]]
+    name = "Contact Me"
+    url = "/contact/"
+    weight = 5
